@@ -12,7 +12,7 @@ public class RationalTester
     //-----------------------------------------------------------------
     public static void main(String[] args)
     {
-        RationalNumber r1 = new RationalNumber(6, 8);
+        RationalNumber r1 = new RationalNumber(-6, -8);
         RationalNumber r2 = new RationalNumber(1, 3);
         RationalNumber r3, r4, r5, r6, r7;
 
@@ -37,22 +37,4 @@ public class RationalTester
         System.out.println("r1 * r2: " + r6);
         System.out.println("r1 / r2: " + r7);
     }
-    public int compareTo(RationalNumber rhs)
-    {
-   
-    int numerator = 0;
-	int denominator = 0;
-	double d1 = numerator / denominator;
-    double d2 = rhs.getNumerator() / rhs.getDenominator();
-
- 
-    double factor = 1/0.0001;
-
-    d1 *= factor;
-    d2 *= factor;
-
-   
-    return (int) (d1 - d2);
-
 }
-    }

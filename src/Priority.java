@@ -1,13 +1,11 @@
 
-	public interface Priority
-	{
-	// constants
-	public static final int LOW = 1;
-	public static final int MEDIUM = 2;
-	public static final int HIGH = 3;
-
-	// abstract methods
-	public void setPriority(int priority);
-	public int getPriority();
-	}
-
+public class Priority {
+	final int MED_PRIORITY = 5;
+	final int MAX_PRIORITY = 10;
+	final int MIN_PRIORITY = 1;
+	
+	public void setPriority(int x);
+	
+	public int getPriority ();
+	
+}
